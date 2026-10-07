@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loading AR Experience...</title>
+    <style>
+        body { font-family: -apple-system, BlinkMacSystemFont, sans-serif; display: flex; justify-content: center; align-items: center; height: 100vh; margin: 0; background: #f4f4f7; }
+        .btn { padding: 15px 30px; background: #007aff; color: white; text-decoration: none; border-radius: 10px; font-weight: bold; font-size: 18px; box-shadow: 0 4px 10px rgba(0,122,255,0.3); }
+    </style>
+</head>
+<body>
+
+    <!-- This special 'ar' attribute tells iPhones to launch Quick Look immediately -->
+    <a id="ar-link" rel="ar" href="Concept%204_2.usdz">
+        <img id="ar-img" src="Concept%204_2.usdz" style="display:none;">
+        <span class="btn">View in AR</span>
+    </a>
+
+    <script>
+        // Automates the click so the user doesn't even have to tap the button
+        document.getElementById('ar-link').click();
+    </script>
+
+</body>
+</html>
